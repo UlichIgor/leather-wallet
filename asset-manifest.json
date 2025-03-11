@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/leather-wallet/static/css/main.0d923811.css",
+    "main.js": "/leather-wallet/static/js/main.245eac81.js",
+    "index.html": "/leather-wallet/index.html",
+    "main.0d923811.css.map": "/leather-wallet/static/css/main.0d923811.css.map",
+    "main.245eac81.js.map": "/leather-wallet/static/js/main.245eac81.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d923811.css",
+    "static/js/main.245eac81.js"
+  ]
+}
