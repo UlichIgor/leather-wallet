@@ -28,7 +28,7 @@ module.exports = {
         },
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.scss$/, // .sass or .scss
         use: [
           // fallback to style-loader in development
           process.env.NODE_ENV !== "production"
@@ -36,6 +36,24 @@ module.exports = {
             : MiniCssExtractPlugin.loader,
           "css-loader",
           "sass-loader",
+         
+        ],
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+            },
+          },
+          {
+            loader: 'webp-loader',
+            options: {
+              quality: 75,
+            },
+          },
         ],
       },
     ],

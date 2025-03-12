@@ -1,15 +1,60 @@
-@use'../../scss/var'as vars;
-.header{
+@use'../../scss/var' as vars;
+
+.header {
   position: relative;
   top: 0;
   left: 0;
   height: 280px;
-  background-color:vars.$bg-color;
-  color:vars.$h1;
+  background-color: vars.$bg-color;
+  color: vars.$h1;
   text-align: center;
-  h1{
-    font-style: italic;
-    font-family: vars.$font-family;
-    font-size: vars.$font-size;
+  width: 100%;
+  height: auto;
+}
+
+.header.poster {
+  background-image: url('../../images/poster.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  position: absolute;
+  top: 8%;
+  left: 12%;
+  max-width: 120px;
+  width: 100%;
+  height: 80px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 17px;
+    border: groove 2px vars.$color;
+    box-shadow: 0 0 10px vars.$color;
   }
+}
+
+.title {
+font-size: vars.$font-size1;
+  font-family: vars.$font-family2;
+  color: vars.$h1;
+  margin-top: 20px;
+
+}
+
+.slogan {
+  font-size: vars.$font-size2;
+  font-family: vars.$font-family;
+  font-style: italic;
+  color: vars.$h2;
+  margin-top: 10px;
 }
