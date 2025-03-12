@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/leather-wallet/static/css/main.0d923811.css",
-    "main.js": "/leather-wallet/static/js/main.245eac81.js",
+    "main.css": "/leather-wallet/static/css/main.bd18b49d.css",
+    "main.js": "/leather-wallet/static/js/main.3be026e5.js",
+    "static/media/poster.png": "/leather-wallet/static/media/poster.e6e040bdf4dd074e89e3.png",
+    "static/media/logo.jpg": "/leather-wallet/static/media/logo.077b9df82f4355ebad86.jpg",
     "index.html": "/leather-wallet/index.html",
-    "main.0d923811.css.map": "/leather-wallet/static/css/main.0d923811.css.map",
-    "main.245eac81.js.map": "/leather-wallet/static/js/main.245eac81.js.map"
+    "main.bd18b49d.css.map": "/leather-wallet/static/css/main.bd18b49d.css.map",
+    "main.3be026e5.js.map": "/leather-wallet/static/js/main.3be026e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d923811.css",
-    "static/js/main.245eac81.js"
+    "static/css/main.bd18b49d.css",
+    "static/js/main.3be026e5.js"
   ]
 }
