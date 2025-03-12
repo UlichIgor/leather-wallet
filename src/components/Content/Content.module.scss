@@ -1,9 +1,118 @@
 @use'../../scss/var' as vars;
-.content{
+
+.content {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: auto;
+  background-color: vars.$color;
 }
 
+.specifications {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: vars.$bg-color;
+
+  h2 {
+    padding-left: 3%;
+    font-size: vars.$font-size3;
+    color: vars.$h2;
+    font-style: italic;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    padding-left: 3%;
+    font-family: vars.$font-family;
+    font-size: vars.$font-size3;
+    color: vars.$color;
+  }
+
+  h3 {
+    padding-left: 3%;
+    font-size: vars.$font-size3;
+    color: vars.$h2;
+    font-family: vars.$font-family2;
+  }
+
+  p {
+    padding-left: 3%;
+    font-size: vars.$font-size3;
+    color: vars.$h3;
+    font-family: vars.$font-family;
+  }
+}
+
+.gallery {
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: 1920px;
+  width: 100%;
+  height: auto;
+  background-color: vars.$color;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 8px 0 12px;
+}
+
+.imageContainer {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 25%;
+  overflow: hidden;
+  height: 300px;
+  margin: 4px;
+  background-color: vars.$bg-color;
+  color: vars.$bg-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.imageContainer:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.872);
+  cursor: pointer;
+  color:vars.$color;
+}
+
+.imageContainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.imageContainer p {
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: vars.$font-size3;
+  font-family: vars.$font-family;
+  padding: 4px;
+}
