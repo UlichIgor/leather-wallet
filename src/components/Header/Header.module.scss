@@ -1,10 +1,9 @@
-@use'../../scss/var' as vars;
+@use '../../scss/var' as vars;
 
 .header {
   position: relative;
   top: 0;
   left: 0;
-  height: 280px;
   background-color: vars.$bg-color;
   color: vars.$h1;
   text-align: center;
@@ -27,7 +26,7 @@
 }
 
 .container {
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -53,6 +52,7 @@
     box-shadow: 0 0 10px vars.$color;
   }
 }
+
 .contacts {
   position: relative;
   top: 0;
@@ -62,33 +62,31 @@
   align-items: center;
   z-index: 10;
 }
-button.phone{
- border: none;
- background: none;
+
+button.phone,
+button.email {
+  border: none;
+  background: none;
   margin-right: 20px;
 }
-a.links{
+
+a.links {
   font-size: vars.$font-size3;
   font-family: vars.$font-family;
   color: vars.$color;
   margin-right: 20px;
   text-decoration: none;
+
   &:hover {
     color: vars.$h1;
   }
 }
-button.email {
-  border: none;
-  background: none;
-  margin-right: 20px;
 
-}
 .title {
   font-size: vars.$font-size1;
   font-family: vars.$font-family2;
   color: vars.$h1;
   margin-top: 20px;
-
 }
 
 .slogan {
@@ -98,5 +96,3 @@ button.email {
   color: vars.$h2;
   margin-top: 10px;
 }
-
-
