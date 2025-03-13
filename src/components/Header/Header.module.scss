@@ -77,6 +77,12 @@ a.links{
     color: vars.$h1;
   }
 }
+button.email {
+  border: none;
+  background: none;
+  margin-right: 20px;
+
+}
 .title {
   font-size: vars.$font-size1;
   font-family: vars.$font-family2;

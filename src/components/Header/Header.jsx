@@ -14,6 +14,7 @@ export default class Header extends Component {
           <div className={styles.contacts}>
             {/* Добавьте здесь контактную информацию */}
             <button className={styles.phone}><a href='tel:380123456789' className={styles.links}>+380123456789</a></button>
+            <button className={styles.email}><a href='mailto:example@gmail.com' className={styles.links}>example@gmail.com</a></button>
           </div>
         </div>
         <h1 className={styles.title}>Шкіряні гаманці</h1>
