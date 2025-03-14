@@ -25,9 +25,11 @@
   }
 
   ul {
+    width: 20%;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    border-right: 2px solid vars.$h2;
   }
 
   li {

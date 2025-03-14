@@ -96,3 +96,13 @@ a.links {
   color: vars.$h2;
   margin-top: 10px;
 }
+.description {
+  font-size: vars.$font-size3;
+  font-family: vars.$font-family;
+  color: vars.$bg-color;
+  margin-top: 10px;
+}
+.description span{
+  color: vars.$h2;
+  font-family: vars.$font-family2;
+}
