@@ -15,7 +15,7 @@
   left: 0;
   width: 100%;
   height: auto;
-  background-color: vars.$bg-color;
+  background-color: vars.$color;
 
   h2 {
     padding-left: 3%;
@@ -36,7 +36,8 @@
     padding-left: 3%;
     font-family: vars.$font-family;
     font-size: vars.$font-size3;
-    color: vars.$color;
+    color: vars.$bg-color;
+  
   }
 
   h3 {
@@ -49,8 +50,9 @@
   p {
     padding-left: 3%;
     font-size: vars.$font-size3;
-    color: vars.$h3;
+    color: vars.$bg-color;
     font-family: vars.$font-family;
+    font-style: italic;
   }
 }
 
@@ -83,9 +85,6 @@
   color: vars.$bg-color;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
   border-radius: 8px;
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
@@ -95,7 +94,7 @@
 
 .imageContainer:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.872);
+  box-shadow: 0 0 8px 2px rgba(1, 1, 1, 0.872);
   cursor: pointer;
   color:vars.$color;
   opacity: 1;
@@ -119,5 +118,33 @@
   left: 0;
   font-size: vars.$font-size3;
   font-family: vars.$font-family;
-  padding: 4px;
+ padding: 0 3px;
+}
+.imageContainer span {
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: vars.$font-size3;
+  font-family: vars.$font-family;
+  color:vars.$h4;
+ text-transform: uppercase;
+ padding: 3px 3px 4px;
+}
+
+p.description {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 75%;
+  font-size: vars.$font-size3;
+  font-family: vars.$font-family;
+  color: vars.$bg-color;
+  font-style: italic;
+  margin: 0 auto;
+  padding: 3%0 4%
+}
+
+.description span {
+  color: vars.$h2;
+  font-family: vars.$font-family2;
 }
