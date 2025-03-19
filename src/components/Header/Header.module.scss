@@ -14,15 +14,14 @@
 .header.poster {
   background-image: url('../../images/poster.png');
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-  height: 680px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+  padding: 5% 0 8%;
 }
 
 .container {

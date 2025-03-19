@@ -7,25 +7,50 @@
   width: 100%;
   height: auto;
   background-color: vars.$color;
-}
 
-.specifications {
+}
+.description{
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
+}
+.description span{
+  color: vars.$h2;
+  font-family: vars.$font-family2;
+  font-size: vars.$font-size3;
+}
+p.description{
+  font-family: vars.$font-family;
+  font-size: vars.$font-size3;
+  color: vars.$bg-color;
+  font-style: italic;
+  padding: 3% 0 4%;
+  margin: 0 auto;
+  width: 75%;
+}
+.specifications {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 80%;
   height: auto;
   background-color: vars.$color;
-
-  h2 {
+}
+.specifications__title{
+  display: flex;
+  flex-direction: column;
+}
+  .specifications__title h2{
     padding-left: 3%;
     font-size: vars.$font-size3;
     color: vars.$h2;
     font-style: italic;
   }
 
-  ul {
-    width: 20%;
+  ul.specifications__list {
+    width: 100%;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -39,22 +64,23 @@
     color: vars.$bg-color;
   
   }
-
-  h3 {
-    padding-left: 3%;
+.specifications__descriptions{
+  display: flex;
+  flex-direction: column;
+}
+  .specifications__descriptions h3{
+    padding-left: 8%;
     font-size: vars.$font-size3;
     color: vars.$h2;
-    font-family: vars.$font-family2;
-  }
-
-  p {
-    padding-left: 3%;
-    font-size: vars.$font-size3;
-    color: vars.$bg-color;
-    font-family: vars.$font-family;
     font-style: italic;
   }
-}
+  .specifications__descriptions p{
+    padding-left: 3%;
+    font-family: vars.$font-family;
+    font-size: vars.$font-size3;
+    color: vars.$bg-color;
+    font-style: italic;
+  }
 
 .gallery {
   position: relative;

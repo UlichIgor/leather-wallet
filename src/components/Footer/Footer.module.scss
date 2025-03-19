@@ -6,4 +6,52 @@
   left: 0;
   width: 100%;
   height: auto;
+  background-color: vars.$color;
+  color: vars.$bg-color;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px 0;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: vars.$h2;
+  font-family: vars.$font-family2;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  color: vars.$bg-color;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: vars.$h1;
 }
