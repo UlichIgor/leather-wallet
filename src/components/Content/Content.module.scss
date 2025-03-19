@@ -9,18 +9,21 @@
   background-color: vars.$color;
 
 }
-.description{
+
+.description {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
 }
-.description span{
+
+.description span {
   color: vars.$h2;
   font-family: vars.$font-family2;
   font-size: vars.$font-size3;
 }
-p.description{
+
+p.description {
   font-family: vars.$font-family;
   font-size: vars.$font-size3;
   color: vars.$bg-color;
@@ -29,58 +32,67 @@ p.description{
   margin: 0 auto;
   width: 75%;
 }
+
 .specifications {
   position: relative;
   top: 0;
   left: 0;
   display: flex;
-  width: 80%;
+  width: 100%;
   height: auto;
+
   background-color: vars.$color;
 }
-.specifications__title{
+
+.specifications__title {
   display: flex;
   flex-direction: column;
 }
-  .specifications__title h2{
-    padding-left: 3%;
-    font-size: vars.$font-size3;
-    color: vars.$h2;
-    font-style: italic;
-  }
 
-  ul.specifications__list {
-    width: 100%;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    border-right: 2px solid vars.$h2;
-  }
+.specifications__title h2 {
+  white-space: nowrap;
+  font-size: vars.$font-size3;
+  color: vars.$h2;
+  font-style: italic;
 
-  li {
-    padding-left: 3%;
-    font-family: vars.$font-family;
-    font-size: vars.$font-size3;
-    color: vars.$bg-color;
-  
-  }
-.specifications__descriptions{
+}
+
+ul.specifications__list {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  list-style-type: none;
+  padding: 3% 7% 4%;
+  border-right: 2px solid vars.$h2;
+}
+
+li {
+  font-family: vars.$font-family;
+  font-size: vars.$font-size3;
+  color: vars.$bg-color;
+
+}
+
+.specifications__descriptions {
   display: flex;
   flex-direction: column;
 }
-  .specifications__descriptions h3{
-    padding-left: 8%;
-    font-size: vars.$font-size3;
-    color: vars.$h2;
-    font-style: italic;
-  }
-  .specifications__descriptions p{
-    padding-left: 3%;
-    font-family: vars.$font-family;
-    font-size: vars.$font-size3;
-    color: vars.$bg-color;
-    font-style: italic;
-  }
+
+.specifications__descriptions h3 {
+  padding-left: 9%;
+  font-size: vars.$font-size3;
+  color: vars.$h2;
+  font-style: italic;
+}
+
+.specifications__descriptions p {
+  padding-left: 5%;
+  font-family: vars.$font-family;
+  font-size: vars.$font-size3;
+  color: vars.$bg-color;
+  font-style: italic;
+}
 
 .gallery {
   position: relative;
@@ -115,14 +127,14 @@ p.description{
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
   opacity: 0.75;
-  
+
 }
 
 .imageContainer:hover {
   transform: scale(1.02);
   box-shadow: 0 0 8px 2px rgba(1, 1, 1, 0.872);
   cursor: pointer;
-  color:vars.$color;
+  color: vars.$color;
   opacity: 1;
 }
 
@@ -144,17 +156,18 @@ p.description{
   left: 0;
   font-size: vars.$font-size3;
   font-family: vars.$font-family;
- padding: 0 3px;
+  padding: 0 3px;
 }
+
 .imageContainer span {
   position: relative;
   top: 0;
   left: 0;
   font-size: vars.$font-size3;
   font-family: vars.$font-family;
-  color:vars.$h4;
- text-transform: uppercase;
- padding: 3px 3px 4px;
+  color: vars.$h4;
+  text-transform: uppercase;
+  padding: 3px 3px 4px;
 }
 
 p.description {
